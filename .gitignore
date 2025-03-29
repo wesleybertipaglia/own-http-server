@@ -1,0 +1,15 @@
+# Ignore object files (.o)
+*.o
+
+# Ignore executables
+server
+output/
+
+# Ignore build directories
+build/
+bin/
+
+# Ignore code editor temporary files
+.vscode/
+.idea/
+*.swp
