@@ -2,6 +2,6 @@
 #define SERVER_H
 
 void start_server(int port);
-void handle_client(int client_socket);
+void handle_client(void *arg);
 
 #endif
