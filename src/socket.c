@@ -39,9 +39,9 @@ int accept_client(int server_fd)
 {
     struct sockaddr_in client_addr;
     socklen_t client_addr_len = sizeof(client_addr);
-    int client_socket = accept(server_fd, (struct sockaddr *)&client_addr, &client_addr_len);
 
-    if (client_socket == -1)
+    int client_socket;
+    while ((client_socket = accept(server_fd, (struct sockaddr *)&client_addr, &client_addr_len)) == -1)
     {
         perror("Error accepting connection");
     }
