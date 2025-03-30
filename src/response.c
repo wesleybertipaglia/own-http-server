@@ -10,5 +10,14 @@ void send_http_response(int client_socket)
         "Connection: close\r\n\r\n"
         "<html><body><h1>Hello, World!</h1></body></html>";
 
-    write(client_socket, response, strlen(response));
+    ssize_t bytes_sent = write(client_socket, response, strlen(response));
+
+    if (bytes_sent == -1)
+    {
+        perror("Error sending response");
+    }
+    else
+    {
+        printf("Sent %ld bytes to client\n", bytes_sent);
+    }
 }
