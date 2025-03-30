@@ -4,6 +4,10 @@ A simple HTTP server written in **C**, designed to handle basic HTTP requests an
 
 This project is part of my **tribute series**, where I recreate fundamental software that shaped the tech industry. This one is dedicated to the **HTTP protocol**, the backbone of the modern web.
 
+> I documented the entire process on [dev.to](https://dev.to/wesleybertipaglia) and [my blog](https://wesleybertipaglia.github.io/).  
+
+Check it out and let’s discuss! 🚀  
+
 ## Features
 
 - Minimalist HTTP server implementation in C
